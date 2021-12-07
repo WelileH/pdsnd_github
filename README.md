@@ -19,4 +19,4 @@ Data is in 3 files (which can be found Udacity Programming for Data Science with
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-- Markdown Tutorial: https://wordpress.com/support/markdown-quick-reference/
+- Markdown Tutorial: https://www.markdownguide.org/basic-syntax/
