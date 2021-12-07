@@ -240,7 +240,7 @@ def main():
         totalstats = input('\n>> Would you like to see stats unfiltered by month or day for your city? Enter Y=yes or N=no. \n>>> ')
         totalstats_options = ['y', 'n']
         totalstats = check_input(totalstats, totalstats_options)
-        if totalstats.lower()=='y':
+        if totalstats == 'y':
             df2 = load_data(city, 'all', 'all')
             time_stats(df2)
             station_stats(df2)
@@ -250,7 +250,7 @@ def main():
         raw_data_display = input('\n>> Would you like to view 5 lines of raw data? Enter Y=yes or N=no. \n>>> ')
         display_options = ['y', 'n']
         raw_data_display = check_input(raw_data_display,display_options)
-        if raw_data_display.lower()=='y':
+        if raw_data_display == 'y':
             cont_display = True
             i = 0
             while cont_display:
@@ -258,7 +258,7 @@ def main():
                     print(df.iloc[i:i+5,:9])
                     more_display = input('\n>> Would you like to view next 5 lines of raw data? Enter Y=yes or N=no. \n>>> ')
                     more_display = check_input(more_display, display_options)
-                    if more_display.lower()=='n':
+                    if more_display == 'n':
                         cont_display = False
                     else:
                         i+=5
@@ -266,14 +266,14 @@ def main():
                     print(df.iloc[i:i+5,:7])
                     more_display = input('\n>> Would you like to view next 5 lines of raw data? Enter Y=yes or N=no. \n>>> ')
                     more_display = check_input(more_display, display_options)
-                    if more_display.lower()=='n':
+                    if more_display == 'n':
                         cont_display = False
                     else:
                         i+=5       
         # Giver user option to view report on missing values in our data set
         missing_value_report = input('\n>> Would you like to view how many missing value in our raw data? Enter Y=yes or N=no. \n>>> ')
         missing_value_report=check_input(missing_value_report, display_options)
-        if missing_value_report=='y':
+        if missing_value_report == 'y':
             if city in ['chicago', 'new york city']:
                 print('Report of Missing Values in Data per column: \n',df.iloc[:,:9].isnull().sum())
             else:
@@ -282,7 +282,7 @@ def main():
         restart = input('\n>> Would you like to restart? Enter Y=yes or N=no.\n>>> ')
         restart_options = ['y', 'n']
         restart=check_input(restart,restart_options)
-        if restart.lower() != 'y':
+        if restart != 'y':
             break
 
 
