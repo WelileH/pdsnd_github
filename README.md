@@ -18,5 +18,5 @@ Data is in 3 files (which can be found Udacity Programming for Data Science with
 3. [new_york_city.csv](https://www.citibikenyc.com/system-data)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+It's important to give proper credit.  
 - Markdown Tutorial: https://www.markdownguide.org/basic-syntax/
