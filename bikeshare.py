@@ -51,7 +51,7 @@ def get_filters():
     day_list = ['All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     day = check_input(day, day_list)
 
-    print('-'*40)
+    print('-='*30)
     return city, month, day
 
 
@@ -131,7 +131,7 @@ def time_stats(df):
     print("Most common hour of day : {}".format(popular_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-='*30)
 
 
 def station_stats(df):
@@ -157,7 +157,7 @@ def station_stats(df):
     print("Most Frequent Combination of Start and End Station Trip : \n \tStart Station \t >=> \t End Station\n{}".format(popular_station_combo))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-='*30)
 
 
 def trip_duration_stats(df):
@@ -185,7 +185,7 @@ def trip_duration_stats(df):
         print()
         
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-='*30)
     
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -225,7 +225,7 @@ def user_stats(df):
         print("KeyError occurred: Sorry, but we cannot do {0} Analysis as we do not have data for {0} in chosen city\n".format(e))
         
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-='*30)
 
 
 def main():
